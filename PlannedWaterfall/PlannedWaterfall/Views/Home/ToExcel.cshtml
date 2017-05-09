@@ -1,0 +1,37 @@
+﻿@model PlannedWaterfall.Models.ToExcelModel
+@{
+    ViewBag.Title = "ToExcel";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>ToExcel</h2>
+    @{int total = 0; }
+    <table border="1" width="100%">
+        <tr>
+            <th>Feature Number</th>
+            <th>Feature Name</th>
+            <th>Low Estimate</th>
+            <th>Expected</th>
+            <th>High Estimate</th>
+            <th>Actual</th>
+        </tr>
+        @for (int i = 0; i < Model.FeatureName.Count; i++)
+        {
+            <tr>
+                <td>@(i + 1)</td>
+                <td>@Model.FeatureName[i]</td>
+                <td>@Model.LowEstimate[i]</td>
+                <td>@Model.Expected[i]</td>
+                <td>@Model.HighEstimate[i]</td>
+                <td>@Model.Actual[i]</td>
+            </tr>
+            total = total + Model.Actual[i]; 
+        }
+    </table>
+    <p>Total: @total</p>
+</body>
+</html>

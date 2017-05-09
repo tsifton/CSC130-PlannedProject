@@ -1,0 +1,63 @@
+﻿@model PlannedWaterfall.Models.ExcelModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Estimates Page</title>
+</head>
+<body>
+
+    @{
+        ViewBag.Title = "ExcelPage";
+    }
+
+    <h2>Excel Page</h2>
+    @using (Html.BeginForm("ToExcel", "Home", FormMethod.Post))
+    {
+        <div class="form-group">
+            @Html.LabelFor(m => m.FeatureName, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.FeatureName, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.LowEstimate, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.LowEstimate, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.HighEstimate, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.HighEstimate, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Expected, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Expected, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Actual, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Actual, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Submit Entry" />
+            </div>
+        </div>
+
+    }
+
+
+</body>
+</html>
+
