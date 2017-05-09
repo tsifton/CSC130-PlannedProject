@@ -1,0 +1,30 @@
+.inlineNav {
+    margin: 50px;
+    ol {
+        list-style-type: none;
+        display: inline;
+    }
+    ul {
+        list-style-type: none;
+        display: inline;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: $secondary-color;
+}
+
+a:visited {
+    color: $third-color;
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}

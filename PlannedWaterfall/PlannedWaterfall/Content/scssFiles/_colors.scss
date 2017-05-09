@@ -1,0 +1,72 @@
+//Main Color Scheme
+$primary-color: #ECF0F1;
+$secondary-color: #2C3E50;
+$backgroundColor: #ffffff;
+$third-color: #2980B9;
+
+//darkening
+$primaryDark: darken($primary-color, 25%);
+$primaryDarker: darken($primary-color, 50%);
+$primaryDarkest: darken($primary-color, 75%);
+
+$secondaryDark: darken($secondary-color, 5%);
+$secondaryDarker: darken($secondary-color, 10%);
+$secondaryDarkest: darken($secondary-color, 15%);
+
+$thirdDark: darken($third-color, 10%);
+$thirdDarker: darken($third-color, 30%);
+$thirdDarkest: darken($third-color, 50%);
+
+$backgroundDark: darken($backgroundColor, 25%);
+$backgroundDarker: darken($backgroundColor, 50%);
+$backgroundDarkest: darken($backgroundColor, 75%);
+
+
+// Lightening
+$secondaryLight: lighten($secondary-color, 5%);
+$secondaryLighter: lighten($secondary-color, 10%);
+$secondaryLightest: lighten($secondary-color, 15%);
+
+$thirdLight: lighten($third-color, 10%);
+$thirdLighter: lighten($third-color, 30%);
+$thirdLightest: lighten($third-color, 50%);
+
+//Secondary Color Scheme
+$primary-color2: #D8CAA8;
+$secondary-color2: #284907;
+$third-color2: #5C832F;
+$backgroundColor2: #363942;
+
+//Darkening Secondary Color Scheme
+$primaryDark2: darken($primary-color2, 25%);
+$primaryDarker2: darken($primary-color2, 50%);
+$primaryDarkest2: darken($primary-color2, 75%);
+
+$secondaryDark2: darken($secondary-color2, 5%);
+$secondaryDarker2: darken($secondary-color2, 10%);
+$secondaryDarkest2: darken($secondary-color2, 15%);
+
+$thirdDark2: darken($third-color2, 10%);
+$thirdDarker2: darken($third-color2, 30%);
+$thirdDarkest2: darken($third-color2, 50%);
+
+$backgroundDark2: darken($backgroundColor2, 5%);
+$backgroundDarker2: darken($backgroundColor2, 10%);
+$backgroundDarkest2: darken($backgroundColor2, 15%);
+
+//Lightening Secondary Color Scheme
+$primaryLight2: lighten($primary-color2, 1%);
+$primaryLighter2: lighten($primary-color2, 5%);
+$primaryLightest2: lighten($primary-color2, 10%);
+
+$secondaryLight2: lighten($secondary-color2, 5%);
+$secondaryLighter2: lighten($secondary-color2, 10%);
+$secondaryLightest2: lighten($secondary-color2, 15%);
+
+$thirdLight2: lighten($third-color2, 10%);
+$thirdLighter2: lighten($third-color2, 30%);
+$thirdLightest2: lighten($third-color2, 50%);
+
+$backgroundLight2: lighten($backgroundColor2, 5%);
+$backgroundLighter2: lighten($backgroundColor2, 10%);
+$backgroundLightest2: lighten($backgroundColor2, 15%);

@@ -1,0 +1,143 @@
+@import 'scssFiles/colors';
+@import 'scssFiles/image';
+@import 'scssFiles/links';
+@import 'scssFiles/customSettings';
+@import 'scssFiles/squareLayout';
+@import 'scssFiles/basicLayout';
+@import 'scssFiles/radius';
+$radius: 10px;
+@import 'scssFiles/round';
+@import 'scssFiles/headAndFoot';
+@import  'scssFiles/headings';
+@import 'scssFiles/flexContainer';
+@import 'scssFiles/darkAndLight';
+@import 'scssFiles/transitions';
+@import 'scssFiles/modals';
+
+@media all and (max-width: 1250px) {
+    .rowDisplayDiv {
+        flex-direction: column;
+    }
+
+    .columnDisplayDiv {
+        flex-direction: row;
+    }
+
+}
+
+@media all and (max-width: 750px) {
+    html {
+        width: 750px;
+    }
+}
+
+.sameSizeDiv {
+    height: 305px;
+}
+
+.eazyPeezy {
+    width: 278.625px;
+    height: 224.5px;
+    border-radius: 25px;
+    background: #fff;
+}
+
+.codeDiv {
+    background-color: $third-color;
+}
+
+.codeBlock {
+    border: 2px solid #000;
+}
+
+li {
+    // background-color: $secondary-color;
+    // margin-right: 0px;
+    // margin-left: 0px;
+    border: 2px solid $third-color;
+}
+
+.box {
+    width: 10px;
+    height: 10px;
+    margin: auto;
+}
+
+.box1 {
+    background-color: $primary-color;
+}
+
+.box2 {
+    background-color: $secondary-color;
+}
+
+.box3 {
+    background-color: $backgroundColor;
+
+}
+
+.box4 {
+    background-color: $third-color;
+
+}
+
+.codeDivColors {
+    background-color: darken($third-color, 20%);
+}
+
+.changeColor1 {
+    background-color: $primary-color2;
+}
+
+.changeColor2 {
+    background-color: $secondary-color2;
+}
+
+.changeColor3 {
+    background-color: $third-color2;
+}
+
+.changeColor4 {
+        background-color: $backgroundColor2;
+}
+
+.divFlex {
+    height: 75px;
+    width: 75px;
+    margin: auto;
+    background-color: $third-color;
+}
+
+.leftDivFlex {
+    @extend .divFlex;
+    background-color: $secondaryDark;
+}
+
+.middleDivFlex {
+    @extend .divFlex;
+    background-color: $primaryDarker;
+}
+
+.rightDivFlex {
+    @extend .divFlex;
+    background-color: $thirdDark;
+}
+
+.changeRadius {
+    width: 50px;
+    height: 50px;
+    background-color: $secondaryLighter;
+    margin: auto;
+}
+
+.roundExample {
+    height: 50px;
+    width: 65px;
+    background-color: $secondaryLightest;
+    margin: auto;
+}
+
+
+strong {
+    margin: 10px;
+}

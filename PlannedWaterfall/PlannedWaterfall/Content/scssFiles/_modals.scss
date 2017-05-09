@@ -1,0 +1,261 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+
+/* The Close Button */
+.close {
+    color: $primary-color;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.animationTop {
+    -webkit-animation-name: animationTop;
+    -moz-animation-name: animationTop;
+    animation-name: animationTop;
+}
+
+.animationBottom {
+    -webkit-animation-name: animationBottom;
+    -moz-animation-name: animationBottom;
+    animation-name: animationBottom;
+}
+
+.animationRight {
+    -webkit-animation-name: animationRight;
+    -moz-animation-name: animationRight;
+    animation-name: animationRight;
+}
+
+.animationLeft {
+    -webkit-animation-name: animationLeft;
+    -moz-animation-name: animationLeft;
+    animation-name: animationLeft;
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    border: 2px solid $third-color;
+    position: relative;
+    // background-color: #fefefe;
+    padding: 0;
+    width: 80%;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 10px;
+    background-color: $secondary-color;
+    color: #fff;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 10px;
+    background-color: $primary-color; 
+    }
+
+/* Modal Footer */
+.modal-footer {
+    padding: 10px;
+    background-color: $secondary-color;
+    color: #fff;
+}
+/* Add Animation */
+@-webkit-keyframes animationTop {
+    from {
+        top: -600px; opacity: 0
+        } 
+    to {
+        top: 0; opacity: 1
+        }
+}
+
+@keyframes animationTop {
+    from {
+        top: -600px; 
+        opacity: 0;
+        }
+    to {
+        top: 0; 
+        opacity: 1;
+        }
+}
+
+@-webkit-keyframes animationBottom {
+    from {
+        bottom: -600px; opacity: 0
+        } 
+    to {
+        bottom: 0; opacity: 1
+        }
+}
+
+@keyframes animationBottom {
+    from {
+        bottom: -600px; 
+        opacity: 0;
+        }
+    to {
+        bottom: 0; 
+        opacity: 1;
+        }
+}
+
+@-webkit-keyframes animationLeft {
+    from {
+        left: -600px; opacity: 0;
+        } 
+    to {
+        left: 0; opacity: 1;
+        }
+}
+
+@keyframes animationLeft {
+    from {
+        left: -600px; 
+        opacity: 0;
+        }
+    to {
+        left: 0; 
+        opacity: 1;
+        }
+}
+
+@-webkit-keyframes animationRight {
+    from {
+        right: -600px; opacity: 0
+        } 
+    to {
+        right: 0; opacity: 1
+        }
+}
+
+@keyframes animationRight {
+    from {
+        right: -600px; 
+        opacity: 0;
+        }
+    to {
+        right: 0; 
+        opacity: 1;
+        }
+}
+
+#openModal {
+    background-color: $secondary-color;
+    color: #fff;
+    border: 2px solid $third-color;
+}
+
+#openModal:hover {
+    background-color: $secondaryLight;
+    border: 2px solid $thirdLight;
+}
+
+@-webkit-keyframes rotateIn {
+    from {
+    -webkit-transform: rotate(0deg); /* Safari */
+    }
+    to {
+    -webkit-transform: rotate(360deg); /* Safari */
+    }
+}
+@keyframes rotateIn {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    -moz-animation-name: rotateIn;
+    animation-name: rotateIn;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

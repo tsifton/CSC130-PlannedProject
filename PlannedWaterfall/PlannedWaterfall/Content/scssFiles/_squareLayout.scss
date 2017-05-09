@@ -1,0 +1,46 @@
+$squareDimensions: 150px;
+
+.squareDiv {
+    height: $squareDimensions;
+    width: $squareDimensions;
+    margin: 10px auto;
+    background-color: $secondary-color;
+    color: #fff;
+}
+
+.squareDivS {
+    $squareDimensions: 200px;
+    @extend .squareDiv;
+        height: $squareDimensions;
+    width: $squareDimensions;
+    
+}
+
+.squareDivM {
+    $squareDimensions: 325px;
+    @extend .squareDiv;
+        height: $squareDimensions;
+    width: $squareDimensions;
+}
+
+.squareDivL {
+    $squareDimensions: 450px;
+    @extend .squareDiv;
+        height: $squareDimensions;
+    width: $squareDimensions;
+}
+
+.roundSquareDivS {
+    @extend .squareDivS;
+    border-radius: 25px;
+}
+
+.roundSquareDivM {
+    @extend .squareDivM;
+    border-radius: 25px;
+}
+
+.roundSquareDivL {
+    @extend .squareDivL;
+    border-radius: 25px;
+}   

@@ -24,28 +24,28 @@
         <div class="form-group">
             @Html.LabelFor(m => m.LowEstimate, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
-                @Html.TextBoxFor(m => m.LowEstimate, new { @class = "form-control" })
+                @Html.TextBoxFor(m => m.LowEstimate, new { @type = "number" })
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(m => m.HighEstimate, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
-                @Html.TextBoxFor(m => m.HighEstimate, new { @class = "form-control" })
+                @Html.TextBoxFor(m => m.HighEstimate, new { @type = "number" })
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(m => m.Expected, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
-                @Html.TextBoxFor(m => m.Expected, new { @class = "form-control" })
+                @Html.TextBoxFor(m => m.Expected, new { @type = "number" })
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(m => m.Actual, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
-                @Html.TextBoxFor(m => m.Actual, new { @class = "form-control" })
+                @Html.TextBoxFor(m => m.Actual, new { @type = "number" })
             </div>
         </div>
 

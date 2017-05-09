@@ -1,0 +1,30 @@
+.expandT {
+    width: 60%;
+    margin: auto;
+    height: 100px;
+    background: $secondary-color;
+    -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+}
+
+.expandT:hover {
+    height: 400px;
+}
+
+.eazyPeezy {
+
+}
+.spinT {
+    width: 100px;
+    height: 100px;
+    background: $secondary-color;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.spinT:hover {
+    width: 445.8px;
+    height: 359.2px;
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}

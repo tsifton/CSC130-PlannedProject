@@ -1,0 +1,190 @@
+.dark {
+    width: 10px;
+    height: 10px;
+    margin: auto;
+}
+
+.sDark {
+    @extend .dark;
+}
+
+.dark1 {
+    background-color: $primaryDark;
+}
+
+.dark2 {
+    background-color: $primaryDarker;
+}
+.dark3 {
+    background-color: $primaryDarkest;
+
+}
+.dark4 {
+    background-color: $secondaryDark;
+
+}
+.dark5 {
+    background-color: $secondaryDarker;
+
+}
+.dark6 {
+    background-color: $secondaryDarkest;
+
+}
+.dark7 {
+    background-color: $thirdDark;
+
+}
+.dark8 {
+    background-color: $thirdDarker;
+
+}
+.dark9 {
+    background-color: $thirdDarkest;
+
+}
+.dark10 {
+    background-color: $backgroundDark;
+
+}
+.dark11 {
+    background-color: $backgroundDarker;
+
+}
+.dark12 {
+    background-color: $backgroundDarkest;
+    
+}
+
+.sDark {
+    @extend .dark;
+}
+
+.sDark1 {
+    background-color: $primaryDark2;
+}
+
+.sDark2 {
+    background-color: $primaryDarker2;
+}
+.sDark3 {
+    background-color: $primaryDarkest2;
+
+}
+.sDark4 {
+    background-color: $secondaryDark2;
+
+}
+.sDark5 {
+    background-color: $secondaryDarker2;
+
+}
+.sDark6 {
+    background-color: $secondaryDarkest2;
+
+}
+.sDark7 {
+    background-color: $thirdDark2;
+
+}
+.sDark8 {
+    background-color: $thirdDarker2;
+
+}
+.sDark9 {
+    background-color: $thirdDarkest2;
+
+}
+.sDark10 {
+    background-color: $backgroundDark2;
+
+}
+.sDark11 {
+    background-color: $backgroundDarker2;
+
+}
+.sDark12 {
+    background-color: $backgroundDarkest2;   
+}
+
+.light {
+    @extend .dark;
+}
+
+.light4 {
+    background-color: $secondaryLight;
+
+}
+
+.light5 {
+    background-color: $secondaryLighter;
+
+}
+
+.light6 {
+    background-color: $secondaryLightest;
+
+}
+
+.light7 {
+    background-color: $thirdLight;
+
+}
+
+.light8 {
+    background-color: $thirdLighter;
+
+}
+
+.light9 {
+    background-color: $thirdLightest;
+
+}
+
+.sLight1 {
+    background-color: $primaryLight2;
+}
+
+.sLight2 {
+    background-color: $primaryLighter2;
+}
+
+.sLight3 {
+    background-color: $primaryLightest2;
+}
+
+.sLight4 {
+    background-color: $secondaryLight2;
+}
+
+.sLight5 {
+    background-color: $secondaryLighter2;
+}
+
+.sLight6 {
+    background-color: $secondaryLightest2;
+}
+
+.sLight7 {
+    background-color: $thirdLight2;
+}
+
+.sLight8 {
+    background-color: $thirdLighter2;
+}
+
+.sLight9 {
+    background-color: $thirdLightest2;
+}
+
+.sLight10 {
+    background-color: $backgroundLight2;
+}
+
+.sLight11 {
+    background-color: $backgroundLighter2;
+}
+
+.sLight12 {
+    background-color: $backgroundLightest2;
+}

@@ -1,0 +1,97 @@
+.makeRound {
+    border-radius: $radius;
+}
+.roundImage {
+    border-radius: $radius;
+}
+
+.roundNav {
+    ul, ol {
+        li {
+            border-radius: $radius;
+        }
+    }
+}
+
+.roundBody {
+    border-radius: $radius;
+}
+
+.roundedDiv {
+    $divWidth: 20%;
+    margin: 10px auto;
+    background-color: $secondary-color;
+    border: 2px solid $third-color;
+    border-radius: $radius;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: $divWidth;
+}
+
+.roundedDivS {
+    @extend .roundedDiv;
+    height: 175px;
+    $divWidth: 300px;
+    width: $divWidth;
+}
+
+.roundedDivM {
+    @extend .roundedDiv;
+    height: 300px;
+    $divWidth: 425px;
+    width: $divWidth;
+}
+
+.roundedDivL {
+    @extend .roundedDiv;
+    height: 425px;
+    $divWidth: 550px;
+    width: $divWidth;
+}
+
+.divS {
+    @extend .roundedDivS;
+    border-radius: 0;
+}
+
+.divM {
+    @extend .roundedDivM;
+    border-radius: 0;
+}
+
+.divL {
+    @extend .roundedDivL;
+    border-radius: 0;
+}
+
+.circleS {
+    @extend .roundedDiv;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.circleM {
+    @extend .roundedDiv;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.circleL {
+    @extend .roundedDiv;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.darker {
+    background-color: darken($secondary-color, 10%);
+
+}
+
+.lighter {
+    background-color: lighten($secondary-color, 10%);
+
+}

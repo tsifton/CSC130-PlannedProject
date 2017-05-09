@@ -1,0 +1,37 @@
+
+.container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.rowDisplayDiv {
+    @extend .container;
+    flex-direction: row;
+}
+
+.columnDisplayDiv {
+    @extend .container;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.flexRow {
+    flex-direction: row;
+}
+
+// .leftDiv {
+//     flex: 1;
+// }
+
+// .middleDiv {
+//     flex: 1;
+// }
+
+// .rightDiv {
+//     flex: 1;
+// }
