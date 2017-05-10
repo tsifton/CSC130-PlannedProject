@@ -70,22 +70,22 @@ code {
   font-family: Courier New, Courier, monospace; }
 
 .makeRound {
-  border-radius: 10px; }
+  border-radius: 25px; }
 
 .roundImage {
-  border-radius: 10px; }
+  border-radius: 25px; }
 
 .roundNav ul li, .roundNav ol li {
-  border-radius: 10px; }
+  border-radius: 25px; }
 
 .roundBody {
-  border-radius: 10px; }
+  border-radius: 25px; }
 
 .roundedDiv, .roundedDivS, .divS, .roundedDivM, .divM, .roundedDivL, .divL, .circleS, .circleM, .circleL {
   margin: 10px auto;
   background-color: #2C3E50;
   border: 2px solid #2980B9;
-  border-radius: 10px;
+  border-radius: 25px;
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -550,55 +550,8 @@ h6 {
 @media all and (max-width: 750px) {
   html {
     width: 750px; } }
-.sameSizeDiv {
-  height: 305px; }
-
-.eazyPeezy {
-  width: 278.625px;
-  height: 224.5px;
-  border-radius: 25px;
-  background: #fff; }
-
-.codeDiv {
-  background-color: #2980B9; }
-
-.codeBlock {
-  border: 2px solid #000; }
-
 li {
   border: 2px solid #2980B9; }
-
-.box {
-  width: 10px;
-  height: 10px;
-  margin: auto; }
-
-.box1 {
-  background-color: #ECF0F1; }
-
-.box2 {
-  background-color: #2C3E50; }
-
-.box3 {
-  background-color: #ffffff; }
-
-.box4 {
-  background-color: #2980B9; }
-
-.codeDivColors {
-  background-color: #164666; }
-
-.changeColor1 {
-  background-color: #D8CAA8; }
-
-.changeColor2 {
-  background-color: #284907; }
-
-.changeColor3 {
-  background-color: #5C832F; }
-
-.changeColor4 {
-  background-color: #363942; }
 
 .divFlex, .leftDivFlex, .middleDivFlex, .rightDivFlex {
   height: 75px;
@@ -614,20 +567,5 @@ li {
 
 .rightDivFlex {
   background-color: #20638f; }
-
-.changeRadius {
-  width: 50px;
-  height: 50px;
-  background-color: #3e5771;
-  margin: auto; }
-
-.roundExample {
-  height: 50px;
-  width: 65px;
-  background-color: #476481;
-  margin: auto; }
-
-strong {
-  margin: 10px; }
 
 /*# sourceMappingURL=style.css.map */
