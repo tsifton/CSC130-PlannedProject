@@ -2,24 +2,36 @@
   border: 2px solid #2980B9;
   padding: 5px; }
 
-.inlineNav {
-  margin: 50px; }
-  .inlineNav ol {
-    list-style-type: none;
-    display: inline; }
-  .inlineNav ul {
-    list-style-type: none;
-    display: inline; }
-
+/*.inlineNav {
+    margin: 50px;
+    ol {
+        list-style-type: none;
+        display: inline;
+    }
+    ul {
+        list-style-type: none;
+        display: inline;
+    }
+}
 a {
-  text-decoration: none; }
+    text-decoration: none;
+}
 
 a:link {
-  color: #2C3E50; }
+    color: $secondary-color;
+}
 
 a:visited {
-  color: #2980B9; }
+    color: $third-color;
+}
 
+a:hover {
+
+}
+
+a:active {
+
+}*/
 div {
   padding: 5px; }
 
@@ -61,7 +73,7 @@ html {
 
 body {
   background-color: #ECF0F1;
-  width: 80%;
+  width: 60%;
   padding: 10px;
   margin: 10px auto;
   border: 2px solid #2980B9; }
@@ -541,9 +553,6 @@ h6 {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41; }
 
-li {
-  border: 2px solid #2980B9; }
-
 .divFlex, .leftDivFlex, .middleDivFlex, .rightDivFlex {
   height: 75px;
   width: 75px;
@@ -559,20 +568,28 @@ li {
 .rightDivFlex {
   background-color: #20638f; }
 
-.inlineNav {
-  margin-top: 10px; }
-  .inlineNav ul li, .inlineNav ol li {
-    display: inline;
-    float: left;
-    margin-right: 12px;
-    margin-bottom: 12px;
-    padding: 5px 3px;
-    font-size: 1.5em;
-    box-shadow: 5px 5px #a1a1a1;
-    margin-top: 5px; }
-    .inlineNav ul li a, .inlineNav ol li a {
-      display: block; }
-
+/*.inlineNav{
+            margin-top: 10px;
+            // height: 45px;
+    ul, ol {
+        li {
+            display: inline;
+            float: left;
+            margin-right: 12px;
+            margin-bottom: 12px;
+            padding: 5px 3px;
+            font-size: 1.5em;
+            box-shadow: 5px 5px #a1a1a1;
+            margin-top: 5px;
+            a {
+                display: block;
+            }
+            a:hover {
+                // background-color: lighten($secondary-color, 8%);
+            }
+        }
+    }
+}*/
 table {
   margin: 10px auto; }
 
@@ -583,7 +600,33 @@ table {
   html {
     min-width: 580px;
     max-width: 580px; } }
-th, tr, td, table {
-  border: 2px solid #2980B9; }
+tr, td {
+  border: 2px solid; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; }
+
+li {
+  float: left; }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+
+li a:hover {
+  background-color: #111; }
+
+.otherStuff {
+  padding-right: 650px; }
+
+ul {
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=style.css.map */
