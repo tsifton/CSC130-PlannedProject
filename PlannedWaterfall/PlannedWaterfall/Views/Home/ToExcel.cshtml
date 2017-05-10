@@ -9,14 +9,50 @@
 </head>
 <body>
     <h2>ToExcel</h2>
-    @{int total = 0; }
+    @{
+        int lowTotal = 0;
+        int expectedTotal = 0;
+        int highTotal = 0;
+        int actualTotal = 0;
+        float averageTotal = 0;
+     }
+
+    @for (int i = 0; i < Model.FeatureName.Count; i++)
+    {
+        lowTotal += Model.LowEstimate[i];
+        expectedTotal += Model.Expected[i];
+        highTotal += Model.HighEstimate[i];
+        actualTotal += Model.Actual[i];
+        averageTotal += (Model.LowEstimate[i] + (4 * Model.Expected[i]) + Model.HighEstimate[i]) / 6;
+    }
+
     <table border="1" width="100%">
         <tr>
-            <th>Feature Number</th>
+            <th></th>
+            <th>Low Estimate</th>
+            <th>Expected</th>
+            <th>High Estimate</th>
+            <th>Average</th>
+            <th>Actual</th>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>@lowTotal</td>
+            <td>@expectedTotal</td>
+            <td>@highTotal</td>
+            <td>@averageTotal</td>
+            <td>@actualTotal</td>
+        </tr>
+    </table>
+
+    <table border="1" width="100%">
+        <tr>
+            <th></th>
             <th>Feature Name</th>
             <th>Low Estimate</th>
             <th>Expected</th>
             <th>High Estimate</th>
+            <th>Average</th>
             <th>Actual</th>
         </tr>
         @for (int i = 0; i < Model.FeatureName.Count; i++)
@@ -27,11 +63,11 @@
                 <td>@Model.LowEstimate[i]</td>
                 <td>@Model.Expected[i]</td>
                 <td>@Model.HighEstimate[i]</td>
+                <td>@((Model.LowEstimate[i] + (4 * Model.Expected[i]) + Model.HighEstimate[i]) / 6)</td>
                 <td>@Model.Actual[i]</td>
             </tr>
-            total = total + Model.Actual[i]; 
         }
     </table>
-    <p>Total: @total</p>
+
 </body>
 </html>
