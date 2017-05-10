@@ -9,16 +9,14 @@
 
 </head>
 <body>
-            <div class="inlineNav">
                 <div class="rowDisplayDiv">
                     <ul class="otherStuff">
                         <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
                         <li>@Html.ActionLink("View Excel", "ToExcel", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
                         <li>@Html.ActionLink("Edit Excel", "Excelpage", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
-                    </ul>
-                    @Html.Partial("_LoginPartial")
+                        @Html.Partial("_LoginPartial")
+                     </ul>
                 </div>
-        </div>
     <div class="container body-content">
         @RenderBody()
         <hr />

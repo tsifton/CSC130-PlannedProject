@@ -25,26 +25,6 @@
         actualTotal += Model.Actual[i];
         averageTotal += (Model.LowEstimate[i] + (4 * Model.Expected[i]) + Model.HighEstimate[i]) / 6;
     }
-    <div class="contentBlock">
-        <table border="1" width="100%">
-
-                <tr>
-                    <th></th>
-                    <th>Low Estimate</th>
-                    <th>Expected</th>
-                    <th>High Estimate</th>
-                    <th>Average</th>
-                    <th>Actual</th>
-                </tr>
-            <tr>
-                <td>Total</td>
-                <td>@lowTotal</td>
-                <td>@expectedTotal</td>
-                <td>@highTotal</td>
-                <td>@averageTotal</td>
-                <td>@actualTotal</td>
-            </tr>
-        </table>
 
         <table border="1" width="100%">
             <tr>
@@ -70,7 +50,26 @@
             }
     
     </table>
-    </div>
+        <h3>Totals:</h3>
+        <table border="1" width="100%">
+
+            <tr>
+                <th></th>
+                <th>Low Estimate</th>
+                <th>Expected</th>
+                <th>High Estimate</th>
+                <th>Average</th>
+                <th>Actual</th>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>@lowTotal</td>
+                <td>@expectedTotal</td>
+                <td>@highTotal</td>
+                <td>@averageTotal</td>
+                <td>@actualTotal</td>
+            </tr>
+        </table>
 
 </body>
 </html>
