@@ -13,23 +13,6 @@
 @import 'scssFiles/transitions';
 @import 'scssFiles/modals';
 
-@media all and (max-width: 1250px) {
-    .rowDisplayDiv {
-        flex-direction: column;
-    }
-
-    .columnDisplayDiv {
-        flex-direction: row;
-    }
-
-}
-
-@media all and (max-width: 750px) {
-    html {
-        width: 750px;
-    }
-}
-
 li {
     // background-color: $secondary-color;
     // margin-right: 0px;
@@ -57,4 +40,46 @@ li {
 .rightDivFlex {
     @extend .divFlex;
     background-color: $thirdDark;
+}
+
+.inlineNav{
+            margin-top: 10px;
+            // height: 45px;
+    ul, ol {
+        li {
+            display: inline;
+            float: left;
+            margin-right: 12px;
+            margin-bottom: 12px;
+            padding: 5px 3px;
+            font-size: 1.5em;
+            box-shadow: 5px 5px #a1a1a1;
+            margin-top: 5px;
+            a {
+                display: block;
+            }
+            a:hover {
+                // background-color: lighten($secondary-color, 8%);
+            }
+        }
+    }
+}
+
+table {
+    margin: 10px auto;
+}
+
+.contentBlock {
+   border: 2px solid $secondary-color;
+}
+
+@media all and (max-width: 580px) {
+    html {
+        min-width: 580px;
+        max-width: 580px;
+    }
+}
+
+th, tr, td, table {
+    border: 2px solid $third-color;
 }
